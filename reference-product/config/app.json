@@ -1,1 +1,6 @@
 
+{
+  "backend_port": 8080,
+  "model_path": "./models/demo-model.bin",
+  "microphone_enabled": true
+}
