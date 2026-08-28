@@ -1,0 +1,33 @@
+{
+  "product": {
+    "name": "LITIT AI Desktop",
+    "version": "1.0.0"
+  },
+  "supported_os": {
+    "windows": {
+      "minimum_version": "11"
+    },
+    "macos": {
+      "minimum_version": "14"
+    },
+    "linux": {
+      "distribution": "Ubuntu",
+      "minimum_version": "22.04"
+    }
+  },
+  "requirements": {
+    "memory_gb": 8,
+    "disk_space_gb": 5,
+    "python": ">=3.11",
+    "microphone_access": true
+  },
+  "optional": {
+    "nvidia_gpu": true,
+    "cuda": ">=12"
+  },
+  "components": [
+    "desktop_application",
+    "local_backend",
+    "speech_model"
+  ]
+}
