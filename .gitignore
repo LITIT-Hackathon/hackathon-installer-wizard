@@ -1,0 +1,4 @@
+node_modules/
+out/*
+!out/smart-installer-demo.mp4
+.remotion/

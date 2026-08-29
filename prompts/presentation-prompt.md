@@ -1,0 +1,15 @@
+# Standalone presentation prompt
+
+```text
+Create a concise 10–12 slide hackathon presentation for “Smart Install,” an environment-aware installer wizard for LITIT AI Desktop. The audience should understand the reasoning behind the interface, not just see polished screens. Do not use a generic startup pitch. Use this narrative: Problem → Research → Insights → UX principles → Architecture → Design system → User flow → Failure recovery → Live demo → Outcome.
+
+Authoritative context: supported OS is Windows 11+, macOS 14+, Ubuntu 22.04+; requirements are 8 GB RAM, 5 GB disk, Python 3.11+, microphone; NVIDIA/CUDA 12+ is optional. Personas are Business User, Developer, Enterprise IT Administrator, and ML Engineer. State prominently: “Simulated persona-based research sessions used to approximate likely interview findings for the purpose of the hackathon.” Never imply real interviews occurred. Label assumptions, architectural proposals, and future validation requirements.
+
+Core finding: different users need opposite levels of automation and detail. Resolve this through plain-language-first progressive disclosure, risk-based remediation, a preview of every machine change, protection of existing Python/CUDA environments, scoped retry without restart, and final health proof. Include a traceability matrix with at least: Business User terminal anxiety → plain explanation → Inline Alert/Technical Details → expandable evidence; Developer retry need → Requirement Check/Remediation Panel → affected-check-only recheck; IT audit need → Installation Plan → paths/privileges/network preview; ML CUDA concern → Configuration Option → CPU fallback/no global CUDA mutation.
+
+Architecture slide: proposed Tauri 2 shell + Angular standalone components/signals + ports/adapters + Rust commands; UI never calls Tauri directly. Compare Electron, Tauri, and native honestly; Tauri fits this MVP but is not objectively superior. Delivery slide: one real primary OS, mocked profiles for all five supplied scenarios, manifest checks, recovery, plan, install simulation/real copy, health check; cross-platform packaging, offline fleet deployment, real dependency installation, rollback, signing are stretch.
+
+Demo story: scan → deliberately missing Python → plain blocker → expand exact evidence → apply clearly labeled remediation → rerun Python only → configure model location → review changes → install with meaningful status → health check → prove reference product launches. Mention the repository contract issue: the app expects models/demo-model.bin, so the installer must create/verify the expected layout. End with outcomes: user confidence, support/audit evidence, adaptable component architecture, credible 24-hour scope.
+
+Visual direction: calm enterprise UI, neutral background, restrained blue and semantic status colors, minimal decoration, diagrams only when they explain relationships. Use large readable screenshots, short evidence-led headlines, no invented metrics. Include speaker notes and a backup-demo slide showing deterministic profiles and recorded evidence.
+```

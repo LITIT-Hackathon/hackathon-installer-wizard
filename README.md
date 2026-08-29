@@ -53,3 +53,30 @@ Teams should:
 ## Deliverable
 
 A working and demonstrable installation/diagnostic prototype.
+
+## Product and delivery package
+
+The repository now includes an evidence-labeled foundation for implementing the prototype:
+
+- [`docs/00-problem-analysis.md`](docs/00-problem-analysis.md) — challenge, lifecycle, risks, constraints, and MVP outcomes.
+- [`research/`](research/) — research plan, guide, explicitly simulated persona sessions, synthesis, JTBD, and principles.
+- [`ux/`](ux/) — journey, information architecture, screen specifications, and scenario/recovery model.
+- [`design-system/`](design-system/) — foundations, tokens, component contracts, accessibility, and content guidance.
+- [`architecture/frontend-architecture.md`](architecture/frontend-architecture.md) and [`docs/adr/001-desktop-architecture.md`](docs/adr/001-desktop-architecture.md) — Angular/Tauri ports-and-adapters proposal and tradeoffs.
+- [`planning/`](planning/) — 24-hour scope, prioritized backlog, readiness/done criteria, vision, and risks.
+- [`docs/expected-solution.md`](docs/expected-solution.md) — reference demo snapshot, not a mandatory specification.
+- [`prompts/`](prompts/) and [`presentation/storyboard.md`](presentation/storyboard.md) — standalone design/video prompts and reasoning-led presentation story.
+
+Research sessions in this package are simulations based on the supplied personas; they are not represented as real interviews. Assumptions, architectural proposals, and future validation requirements are labeled throughout.
+
+## Remotion product demo
+
+The deterministic 70-second Smart Installer demo is implemented in [`src/`](src/) as reusable React/Remotion components, screens, sequences, scenario data, and centralized motion/theme configuration. It contains no screen recording or narration.
+
+```bash
+npm install
+npm run start
+npm run render
+```
+
+The render command produces `out/smart-installer-demo.mp4` at 1920×1080, 30 FPS.
